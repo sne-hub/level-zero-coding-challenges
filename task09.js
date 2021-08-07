@@ -1,6 +1,7 @@
 function vowelFinder(str){
-    const result = str.match(/[aeiou]/g);
-    console.log(result);
-    
+    var regex = /[aeiou]/g;
+    var result = str.match(regex);
+    var unique = [...new Set(result)];
+    console.log(unique);
 }
-vowelFinder('Umuzi');
+vowelFinder('Umuuzi');

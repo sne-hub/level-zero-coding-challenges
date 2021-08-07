@@ -1,5 +1,9 @@
-function areaOfTriangle(height,breath,hypotenous){
-    var area = 1 / 2 * breath * height;
-    return area
+function areaOfTriangle(a,b,c){
+    var s = (a + b + c ) / 2;
+    var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    return area;
 }
-console.log(areaOfTriangle(2,4,7));
+   var a = 2;
+   var b = 1;
+   var c = 2;
+console.log(areaOfTriangle(a,b,c));
