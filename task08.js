@@ -1,12 +1,15 @@
 function timeConveter(number){
-    var hours =parseInt(number / 60); 
-    var minutes = number % 60; 
-    if ( hours == 1 || minutes ==1) {
-        console.log( hours + "hour" + " : " + minutes + " minute");
-        }else{
-            console.log( hours + " hours" + " : " + minutes + " minutes");
-        }
-        
-    
+    var hour = Math.floor(number /60);
+    var minute = number % 60;
+    if(hour === 1 && minute !== 1){
+        console.log(hour + 'hour' + ' : ' + minute + 'minutes' )
+    }else if(hour === 1 && minute === 1){
+        console.log( hour + 'hour' + ' : '+ minute + 'minute')
+    }else if(hour !==1 && minute ===1){
+        console.log(hour + 'hours' + ' : ' + minute + 'minute')
+    }else{
+        console.log(hour + 'hours' + ' : ' + minute + 'minutes')
+
+    }  
 }
-timeConveter(61);
+timeConveter(60);
