@@ -1,9 +1,10 @@
-function areaOfTriangle(a,b,c){
-    var s = (a + b + c ) / 2;
-    var area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+function areaOfTriangle(a, b, c) {
+    if (a < 0 || b < 0 || c < 0 || a + b <= c || a + c <= b || b + c <= a) {
+        return false;
+    }
+    let s = (a + b + c) / 2;
+    let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+
     return area;
 }
-   var a = 2;
-   var b = 1;
-   var c = 2;
-console.log(areaOfTriangle(a,b,c));
+console.log(areaOfTriangle(2, 4, 3));

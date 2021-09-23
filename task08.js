@@ -1,6 +1,6 @@
 function timeConveter(number){
-    var hour = Math.floor(number /60);
-    var minute = number % 60;
+    let hour = Math.floor(number /60);
+    let minute = number % 60;
     if(hour === 1 && minute !== 1){
         console.log(hour + 'hour' + ' : ' + minute + 'minutes' )
     }else if(hour === 1 && minute === 1){
